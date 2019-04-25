@@ -1,0 +1,30 @@
+<div class="conquest-container">
+	<div class="conquest-header">
+		<p class="conquest-header-text">Accounting Conquest</p>
+	</div>
+	<div class="result-body">
+		<div class="result-content">
+			<div class="result-img">
+				<% if @exp_point<3 %>
+					<%= image_tag "ninja.png" %>
+				<% elsif @exp_point>=3 and @exp_point<6 %>
+					<%= image_tag "ninja2.png"%>
+				<% elsif @exp_point>=6 %>
+					<%= image_tag "ninja3.png" %>
+				<% end %>
+			</div>
+			<div class="result-percent">
+				<div>Total:</div>
+				<div><%= (@exp_point.to_f*100/9).round %>%</div>
+			</div>
+			<div class="result-point">
+				<p>Level:<%= @exp_point/3 %></p>
+				<p>Exp Points:<%= @exp_point %></p>
+				<h1><%= @conquest_title %></h1>
+			</div>
+		</div>
+		<div class="result-btn-next">
+			<%= image_tag "next.png" , :class => "request-img-next" %>
+		</div>
+	</div>
+</div>

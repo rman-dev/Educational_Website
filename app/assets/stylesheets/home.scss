@@ -1,0 +1,110 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+	font-family: 'Segoe Print';
+	font-style: normal;
+	font-weight: normal;
+	src: font-url('segoe_print.ttf') format('truetype');
+}
+
+.home-container {
+	
+}
+.home-title {
+	padding-top: 100px;
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;	
+}
+.home-title-text {
+	font-family: "Segoe Print";
+	font-size: 160px;
+	color: black;
+	word-break: break-all;
+}
+.home-img-first {
+	display: none;
+}
+.home-img-second {
+	display: inline-block;
+	margin-top: -150px;
+    margin-left: 100px;
+    width: 200px;
+}
+.home-title-account {
+
+}
+.home-title-conquest {
+	display: inline-block;
+}
+
+@media (max-width: 1200px){
+	.home-title-text {
+		font-size: 13.33vw;
+	}
+	.home-img-second {
+		width: 16.66vw;
+		margin-top: -12.5vw;
+		margin-right: 8.33vw;
+		margin-right: 0px;
+	}
+}
+@media (max-width: 760px){
+	.home-title-text {
+		font-size: 13.33vw;
+	}
+	.home-img-second {
+		display: none;;
+	}
+	.home-img-first {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+
+.btn-home {
+	color: white;
+	border-radius: 5px;
+	border: none;
+	width: 300px;
+	height: 50px;
+	margin: 10px;
+	display: inline-block;
+}
+.home-btn-group {
+	max-width: 1170px;
+	text-align: center;
+	margin: 0px auto;
+}
+.btn-green {
+	background-color: #00b050;
+}
+.btn-yellow {
+	background-color: #ffc000;
+}
+.btn-pink {
+	background-color: #7030a0;
+}
+.btn-red {
+	background-color: #c42d54;
+}
+.btn-blue {
+	background-color: #00b0f0;
+}
+.footer {
+	padding-top: 70px;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media (max-width: 350px) {
+	.btn-home {
+		width: 80vw;
+		height: 20vw;
+		font-size: 5vw;
+		display: inline-block;
+	}
+}
